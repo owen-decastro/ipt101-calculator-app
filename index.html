@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="StyleSheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    <h1>MARK JOHN WELL D. DE CASTRO</h1>
+    <h3>CALCULATOR</h3>
+    <div class="container">
+    <table>
+        <tr>
+            <th colspan="4"><input id="result" type="text" placeholder="0" value="0" disabled></th>
+        </tr>
+        <tr>
+            <td><input class="operator" type="button" value="%" onclick="modulo('%')"></td>
+            <td><input class="operator" type="button" value="√" onclick="squareroot('√')"></td>
+            <td><input class="clear" type="button" value="C" onclick="clearText()"></td>
+            <td><input class="delete" type="button" value="DEL" onclick="del()"></td>
+        </tr>        
+        <tr>
+            <td><input class="number" type="button" value="1" onclick="appendnumber(1)"></td>
+            <td><input class="number" type="button" value="2" onclick="appendnumber(2)"></td>
+            <td><input class="number" type="button" value="3" onclick="appendnumber(3)"></td>
+            <td><input class="operator" type="button" value="/" onclick="operators('/')"></td>
+        </tr>
+        <tr>
+            <td><input class="number" type="button" value="4" onclick="appendnumber(4)"></td>
+            <td><input class="number" type="button" value="5" onclick="appendnumber(5)"></td>
+            <td><input class="number" type="button" value="6" onclick="appendnumber(6)"></td>
+            <td><input class="operator" type="button" value="*"onclick="operators('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="number" type="button" value="7" onclick="appendnumber(7)"></td>
+            <td><input class="number" type="button" value="8" onclick="appendnumber(8)"></td>
+            <td><input class="number" type="button" value="9" onclick="appendnumber(9)"></td>
+            <td><input class="operator" type="button" value="-"onclick="operators('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="number" type="button" value="." onclick="appendnumber('.')"></td>
+            <td><input class="number" type="button" value="0"onclick="appendnumber(0)"></td>
+            <td><input class="operator" type="button" value="=" onclick="calc()"></td>
+            <td><input class="operator" type="button" value="+"onclick="operators('+')"></td>
+        </tr> 
+    </table>
+    </div>
+</body>
+</html>
